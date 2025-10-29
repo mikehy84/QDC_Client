@@ -1,0 +1,71 @@
+
+/* type scale: 9px 12px 15px 18px 23px 28px 36px 44px 55px  */
+/*--------------------------------------------------------------*/
+/* BASIC SETUP */
+
+*:focus {
+  outline: none;
+  outline-width: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.service-page {
+  grid-area: m1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 1rem 10rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Gray-0);
+  padding: 1rem;
+  margin-bottom: 0.2rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0.5rem var(--boxShadow);
+}
+
+.service-box>div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: auto;
+  gap: 2rem;
+}
+
+.service-box>img {
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.service-box ul {
+  padding-left: 2rem;
+}
+
+
+/* ------------------------------------------------------------------------ */
+@media (max-width: 1600px) {
+  .service-page {
+    padding: 0 5rem;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 1080px) {
+  .service-page {
+    padding: 0 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+}
